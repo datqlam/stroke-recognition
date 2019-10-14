@@ -1,4 +1,4 @@
-"""tutorial URL Configuration
+"""strokeregconition URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api-auth/', include('rest_framework.urls')), # new
     path('', include('snippets.urls')), # new
+    path('stroke/', include('strokeapi.urls')), # new
 ]
