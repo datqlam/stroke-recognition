@@ -14,11 +14,11 @@ print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
 
 model = NLPModel()
 
-clf_path = 'lib/models/SentimentClassifier.pkl'
+clf_path = 'src/lib/models/SentimentClassifier.pkl'
 with open(clf_path, 'rb') as f:
     model.clf = pickle.load(f)
     
-vec_path = 'lib/models/TFIDFVectorizer.pkl'
+vec_path = 'src/lib/models/TFIDFVectorizer.pkl'
 with open(vec_path, 'rb') as f:
     model.vectorizer = pickle.load(f)
 
