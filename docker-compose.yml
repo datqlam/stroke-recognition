@@ -2,7 +2,7 @@ version: '3'
 
 services:
  web:
-  build: .
+  image: lqdat2n/stroke-recognition:v0.0.1
   command: python src/manage.py runserver 0.0.0.0:8000
   volumes:
    - .:/strokeregconition
