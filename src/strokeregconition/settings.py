@@ -25,7 +25,7 @@ SECRET_KEY = 'g$sum@j0x=w*gy!o$+7jxv%g!5s3ui3(0r+0zqoc^-fwr_bqpy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
