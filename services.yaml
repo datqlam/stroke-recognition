@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: stroke-recognition-service
+  labels:
+    service.kubernetes/name: stroke-recognition-service
+spec:
+  selector:
+    app.kubernetes.io/name: stroke-recognition
+  type: NodePort
+  ports:
+   - port: 8000
+     nodePort: 32000

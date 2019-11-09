@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app.kubernetes.io/name: stroke-recognition
+  name: stroke-recognition
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: stroke-recognition
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: stroke-recognition
+    spec:
+      containers:
+      - image: docker.io/lqdat2n/stroke-recognition:v0.0.2
+        name: stroke-recognition
+        ports:
+        - containerPort: 8000
