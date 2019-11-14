@@ -63,7 +63,7 @@ class PredictSentimentApiView(views.APIView):
     
     
     
-    def get(self, request):
+    def post(self, request):
         
         print("kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
         req = self.request
