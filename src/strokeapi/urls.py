@@ -4,8 +4,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from strokeapi import views
 
 urlpatterns = [
-    path('predict', views.StrokeApiView.as_view(), name='stroke-list'),
-    path('predictSentiment', views.PredictSentimentApiView.as_view(), name='sentiment-list'),
+    path('predict', views.PredictApiView.as_view(), name='predict-list'),
     
 ]
 

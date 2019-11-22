@@ -15,7 +15,7 @@ spec:
         app.kubernetes.io/name: stroke-recognition
     spec:
       containers:
-      - image: docker.io/lqdat2n/stroke-recognition:v0.0.3
+      - image: docker.io/lqdat2n/stroke-recognition:v0.0.5
         name: stroke-recognition
         ports:
         - containerPort: 8000
