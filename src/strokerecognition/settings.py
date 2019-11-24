@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework', # new
-    'snippets.apps.SnippetsConfig', # new
     'strokeapi.apps.StrokeapiConfig', # new
     'corsheaders',
 ]
