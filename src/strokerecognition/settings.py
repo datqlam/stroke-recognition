@@ -125,3 +125,6 @@ STATIC_URL = '/static/'
 
 # Enable "Access-Control-Allow-Origin" = *
 CORS_ORIGIN_ALLOW_ALL = True
+
+# Disable upload maximum check
+DATA_UPLOAD_MAX_MEMORY_SIZE = None

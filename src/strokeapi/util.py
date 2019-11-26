@@ -22,8 +22,8 @@ def preProcessImageData(img_base64):
     img = Image.open(buf)
         
     img_cvt = cv2.cvtColor(array(img), cv2.COLOR_BGR2GRAY)
-    img_cvt = cv2.resize(img_cvt,(50,50))
-    img_cvt = img_cvt.reshape((1, 50 * 50))
+    img_cvt = cv2.resize(img_cvt,(100,100))
+    img_cvt = img_cvt.reshape((-1, 100, 100, 1))
     img_cvt = img_cvt.astype('float32') / 255
     
     return img_cvt
