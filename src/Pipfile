@@ -8,7 +8,7 @@ verify_ssl = true
 [packages]
 django = "==2.2.5"
 djangorestframework = "==3.10.3"
-pygments = "==2.4.2"
+pygments = "==2.7.4"
 
 [requires]
 python_version = "3.7"
